@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Lampada-POE (sala)</title>
+</head>
+<body>
+    <div class="lampada">
+        <img id="lampada" src="./Images/LampadaApagada.png" alt="Uma lampada apagada"
+        onmousemove="AcenderALampada()"
+        onmouseleave="ApagarALampada ()"
+        ondblclick="QuebrarALampada()">
+    </div>
+    <div class="botoes">
+        <button onclick="AcenderALampada()"> <b>Aceder</b> a Lâmpada </button>
+        <button onclick="ApagarALampada()"> <b>Apagar</b> a Lâmpada </button>
+        <button onclick="RestaurarALampada()"> <b>Restaurar</b> a Lâmpada </button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
